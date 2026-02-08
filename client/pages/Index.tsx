@@ -18,10 +18,10 @@ export default function Index() {
                   </span>
                 </div>
                 <h1 className="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent leading-tight">
-                  Chat with Neuron AI
+                  Chat with C.O.G.N.I.F.Y
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Experience the power of intelligent conversation. Neuron AI
+                  Experience the power of intelligent conversation. C.O.G.N.I.F.Y
                   understands context, learns from interactions, and provides
                   thoughtful responses tailored to your needs.
                 </p>
@@ -83,7 +83,7 @@ export default function Index() {
                     <div className="flex justify-start">
                       <div className="bg-gray-100 text-gray-900 rounded-lg rounded-bl-none px-4 py-3 max-w-xs">
                         <p className="text-sm">
-                          What can Neuron AI help me with?
+                          What can C.O.G.N.I.F.Y help me with?
                         </p>
                       </div>
                     </div>
@@ -217,7 +217,7 @@ export default function Index() {
           </h2>
           <p className="text-xl text-white/90 mb-8">
             Join thousands of users enjoying intelligent conversations with
-            Neuron AI
+            C.O.G.N.I.F.Y
           </p>
           <Link
             to="/chat"
