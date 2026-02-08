@@ -17,14 +17,14 @@ interface ChatWindowProps {
 }
 
 export function ChatWindow({
-  title = "Neuron AI Assistant",
+  title = "C.O.G.N.I.F.Y Assistant",
   height = "h-[500px]",
 }: ChatWindowProps) {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
       content:
-        "Hello! I'm Neuron AI. I'm here to help you with any questions or tasks. What can I assist you with today?",
+        "Hello! I'm C.O.G.N.I.F.Y, your Cognitive Optimization & Generation Network Interface. I'm here to help you with any questions or tasks. What can I assist you with today?",
       sender: "ai",
       timestamp: new Date(),
     },
@@ -100,7 +100,7 @@ export function ChatWindow({
       {/* Header */}
       <div className="bg-gradient-to-r from-primary to-secondary text-white px-6 py-4">
         <h3 className="font-semibold text-lg">{title}</h3>
-        <p className="text-sm opacity-90">Powered by advanced AI</p>
+        <p className="text-sm opacity-90">Powered by advanced cognitive technology</p>
       </div>
 
       {/* Messages Container */}
