@@ -42,12 +42,6 @@ export function AppLayout({ children }: AppLayoutProps) {
               >
                 Features
               </Link>
-              <Link
-                to="/pricing"
-                className="text-gray-600 hover:text-primary font-medium transition-colors"
-              >
-                Pricing
-              </Link>
             </nav>
 
             {/* CTA Button */}
@@ -101,14 +95,6 @@ export function AppLayout({ children }: AppLayoutProps) {
                     className="text-gray-600 hover:text-primary transition-colors"
                   >
                     Features
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/pricing"
-                    className="text-gray-600 hover:text-primary transition-colors"
-                  >
-                    Pricing
                   </Link>
                 </li>
               </ul>
