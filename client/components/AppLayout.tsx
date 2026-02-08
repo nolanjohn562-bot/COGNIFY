@@ -37,6 +37,12 @@ export function AppLayout({ children }: AppLayoutProps) {
                 Chat
               </Link>
               <Link
+                to="/about"
+                className="text-gray-600 hover:text-primary font-medium transition-colors"
+              >
+                About
+              </Link>
+              <Link
                 to="/features"
                 className="text-gray-600 hover:text-primary font-medium transition-colors"
               >
@@ -87,6 +93,14 @@ export function AppLayout({ children }: AppLayoutProps) {
                     className="text-gray-600 hover:text-primary transition-colors"
                   >
                     Chat
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/about"
+                    className="text-gray-600 hover:text-primary transition-colors"
+                  >
+                    About
                   </Link>
                 </li>
                 <li>
