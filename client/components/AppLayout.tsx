@@ -18,7 +18,7 @@ export function AppLayout({ children }: AppLayoutProps) {
                 ✨
               </div>
               <span className="font-bold text-xl hidden sm:inline bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Neuron AI
+                C.O.G.N.I.F.Y
               </span>
             </Link>
 
@@ -75,11 +75,11 @@ export function AppLayout({ children }: AppLayoutProps) {
                   ✨
                 </div>
                 <span className="font-bold text-lg bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  Neuron AI
+                  C.O.G.N.I.F.Y
                 </span>
               </div>
               <p className="text-gray-600 text-sm">
-                Advanced AI conversations for everyone
+                Cognitive Optimization & Generation Network Interface For You
               </p>
             </div>
 
@@ -171,7 +171,7 @@ export function AppLayout({ children }: AppLayoutProps) {
 
           <div className="border-t border-gray-200 pt-8">
             <p className="text-center text-gray-600 text-sm">
-              © 2024 Neuron AI. All rights reserved.
+              © 2024 C.O.G.N.I.F.Y. All rights reserved.
             </p>
           </div>
         </div>
