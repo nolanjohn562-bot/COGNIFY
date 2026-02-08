@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { SendIcon } from "lucide-react";
+import { ChatRequest, ChatResponse } from "@shared/api";
 
 interface Message {
   id: string;
@@ -55,30 +56,43 @@ export function ChatWindow({
     setInput("");
     setIsLoading(true);
 
-    // Simulate AI response delay
-    setTimeout(() => {
+    try {
+      // Call the chat API
+      const request: ChatRequest = { message: input };
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(request),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to get response from API");
+      }
+
+      const data = (await response.json()) as ChatResponse;
+
       const aiMessage: Message = {
         id: (Date.now() + 1).toString(),
-        content: generateAIResponse(input),
+        content: data.message,
         sender: "ai",
         timestamp: new Date(),
       };
       setMessages((prev) => [...prev, aiMessage]);
+    } catch (error) {
+      console.error("Chat error:", error);
+      const errorMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        content:
+          "Sorry, I encountered an error processing your request. Please try again.",
+        sender: "ai",
+        timestamp: new Date(),
+      };
+      setMessages((prev) => [...prev, errorMessage]);
+    } finally {
       setIsLoading(false);
-    }, 800);
-  };
-
-  const generateAIResponse = (userInput: string): string => {
-    const responses = [
-      "That's a great question! I'd be happy to help you explore that topic further.",
-      "I understand what you're asking. Let me provide you with a comprehensive answer.",
-      "That's interesting! Here's what I think about that: I'm designed to provide helpful, creative, and thoughtful responses to all kinds of queries.",
-      "I appreciate you bringing that up. This is an important topic that deserves careful consideration.",
-      "You've touched on something really valuable. Let me help you think through this in more detail.",
-    ];
-
-    // Return a random response for demo purposes
-    return responses[Math.floor(Math.random() * responses.length)];
+    }
   };
 
   return (
