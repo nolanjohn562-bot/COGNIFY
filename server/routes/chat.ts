@@ -42,8 +42,11 @@ export const handleChat: RequestHandler = async (req, res) => {
 
     if (!response.ok) {
       const error = await response.text();
-      console.error("Groq API error:", error);
-      res.status(500).json({ error: "Failed to get response from AI" });
+      console.error("Groq API error (status", response.status + "):", error);
+      res.status(500).json({
+        error: "Failed to get response from AI",
+        details: error
+      });
       return;
     }
 

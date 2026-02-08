@@ -68,7 +68,11 @@ export function ChatWindow({
       });
 
       if (!response.ok) {
-        throw new Error("Failed to get response from API");
+        const errorData = await response.json().catch(() => ({}));
+        console.error("API error response:", errorData);
+        throw new Error(
+          (errorData as any).error || "Failed to get response from API"
+        );
       }
 
       const data = (await response.json()) as ChatResponse;
