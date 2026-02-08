@@ -26,9 +26,9 @@ export default function About() {
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
               C.O.G.N.I.F.Y is an advanced AI chatbot designed to empower users
-              to think better, learn faster, and create more effectively. Whether
-              you're a student, professional, creator, or curious learner,
-              C.O.G.N.I.F.Y is your intelligent companion for any task.
+              to think better, learn faster, and create more effectively.
+              Whether you're a student, professional, creator, or curious
+              learner, C.O.G.N.I.F.Y is your intelligent companion for any task.
             </p>
           </div>
         </section>
@@ -46,18 +46,20 @@ export default function About() {
                     C.O.G.N.I.F.Y stands for Cognitive Optimization & Generation
                     Network Interface For You. It's a sophisticated AI assistant
                     powered by state-of-the-art machine learning technology that
-                    understands context, reasoning, and nuance in human language.
+                    understands context, reasoning, and nuance in human
+                    language.
                   </p>
                   <p>
                     Built on advanced neural networks, C.O.G.N.I.F.Y engages in
                     natural conversations and helps you tackle challenges across
-                    multiple domains—from technical problems to creative projects.
+                    multiple domains—from technical problems to creative
+                    projects.
                   </p>
                   <p>
                     The core philosophy behind C.O.G.N.I.F.Y is simple: make
-                    powerful AI technology accessible to everyone. No complicated
-                    interfaces, no steep learning curves—just intelligent
-                    conversation that adapts to your needs.
+                    powerful AI technology accessible to everyone. No
+                    complicated interfaces, no steep learning curves—just
+                    intelligent conversation that adapts to your needs.
                   </p>
                 </div>
               </div>
@@ -213,8 +215,8 @@ export default function About() {
                   🧠 Curious Minds
                 </h3>
                 <p className="text-gray-700">
-                  Explore any topic, ask questions, dive deep into subjects
-                  that interest you, and satisfy your intellectual curiosity.
+                  Explore any topic, ask questions, dive deep into subjects that
+                  interest you, and satisfy your intellectual curiosity.
                 </p>
               </div>
 
@@ -224,8 +226,8 @@ export default function About() {
                 </h3>
                 <p className="text-gray-700">
                   If you need help with anything—research, brainstorming,
-                  planning, or just having a meaningful conversation—C.O.G.N.I.F.Y
-                  is here for you.
+                  planning, or just having a meaningful
+                  conversation—C.O.G.N.I.F.Y is here for you.
                 </p>
               </div>
             </div>

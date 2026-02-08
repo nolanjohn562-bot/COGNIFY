@@ -23,9 +23,9 @@ export default function Index() {
                   Chat with C.O.G.N.I.F.Y
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Experience the power of intelligent conversation. C.O.G.N.I.F.Y
-                  understands context, learns from interactions, and provides
-                  thoughtful responses tailored to your needs.
+                  Experience the power of intelligent conversation.
+                  C.O.G.N.I.F.Y understands context, learns from interactions,
+                  and provides thoughtful responses tailored to your needs.
                 </p>
               </div>
 
@@ -240,7 +240,9 @@ export default function Index() {
           <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
             {/* Modal Header */}
             <div className="sticky top-0 bg-gradient-to-r from-primary to-secondary text-white px-6 py-6 flex items-center justify-between border-b">
-              <h2 className="text-2xl font-bold">Learn More About C.O.G.N.I.F.Y</h2>
+              <h2 className="text-2xl font-bold">
+                Learn More About C.O.G.N.I.F.Y
+              </h2>
               <button
                 onClick={() => setShowLearnMore(false)}
                 className="p-1 hover:bg-white/20 rounded-lg transition-colors"
@@ -255,16 +257,17 @@ export default function Index() {
                 <p>
                   C.O.G.N.I.F.Y is an intelligent AI chatbot designed to help
                   users think, learn, and create more efficiently. Built to
-                  provide fast, natural, and meaningful conversations, C.O.G.N.I.F.Y
-                  can assist with answering questions, generating ideas, solving
-                  problems, and supporting everyday tasks.
+                  provide fast, natural, and meaningful conversations,
+                  C.O.G.N.I.F.Y can assist with answering questions, generating
+                  ideas, solving problems, and supporting everyday tasks.
                 </p>
                 <p>
                   Whether you're studying, coding, brainstorming, or just
                   exploring new topics, C.O.G.N.I.F.Y is here to make
                   information more accessible and interaction more engaging.
-                  With a simple interface and powerful AI behind it, C.O.G.N.I.F.Y
-                  brings smart conversation right to your fingertips.
+                  With a simple interface and powerful AI behind it,
+                  C.O.G.N.I.F.Y brings smart conversation right to your
+                  fingertips.
                 </p>
               </div>
 

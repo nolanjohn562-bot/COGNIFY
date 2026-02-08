@@ -110,11 +110,15 @@ export function ChatWindow({
       {/* Header */}
       <div className="bg-gradient-to-r from-primary to-secondary text-white px-6 py-4">
         <h3 className="font-semibold text-lg">{title}</h3>
-        <p className="text-sm opacity-90">Powered by advanced cognitive technology</p>
+        <p className="text-sm opacity-90">
+          Powered by advanced cognitive technology
+        </p>
       </div>
 
       {/* Messages Container */}
-      <div className={`flex-1 overflow-y-auto ${height} p-6 space-y-4 bg-gray-50`}>
+      <div
+        className={`flex-1 overflow-y-auto ${height} p-6 space-y-4 bg-gray-50`}
+      >
         {messages.map((message) => (
           <div
             key={message.id}

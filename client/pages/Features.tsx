@@ -148,9 +148,7 @@ export default function Features() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">
-                      Free to Use
-                    </h3>
+                    <h3 className="font-semibold text-gray-900">Free to Use</h3>
                     <p className="text-gray-600 text-sm mt-1">
                       Start chatting immediately with no subscription required
                     </p>
