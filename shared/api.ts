@@ -10,3 +10,17 @@
 export interface DemoResponse {
   message: string;
 }
+
+/**
+ * Request type for /api/chat
+ */
+export interface ChatRequest {
+  message: string;
+}
+
+/**
+ * Response type for /api/chat
+ */
+export interface ChatResponse {
+  message: string;
+}
