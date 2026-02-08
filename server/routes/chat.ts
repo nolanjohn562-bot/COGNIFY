@@ -24,7 +24,7 @@ export const handleChat: RequestHandler = async (req, res) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "llama-3.2-90b-vision-preview",
+        model: "gemma-7b-it",
         messages: [
           {
             role: "system",
