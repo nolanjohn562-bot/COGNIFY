@@ -24,7 +24,7 @@ export const handleChat: RequestHandler = async (req, res) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "llama-3.1-70b-versatile",
+        model: "llama-3.2-90b-vision-preview",
         messages: [
           {
             role: "system",
@@ -41,11 +41,17 @@ export const handleChat: RequestHandler = async (req, res) => {
     });
 
     if (!response.ok) {
-      const error = await response.text();
-      console.error("Groq API error (status", response.status + "):", error);
+      let error = "";
+      try {
+        const errorData = await response.json();
+        error = JSON.stringify(errorData);
+        console.error("Groq API error (status", response.status + "):", errorData);
+      } catch {
+        error = await response.text();
+        console.error("Groq API error (status", response.status + "):", error);
+      }
       res.status(500).json({
-        error: "Failed to get response from AI",
-        details: error
+        error: "Failed to get response from AI: " + error
       });
       return;
     }
